@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Overflow Demonstration</h1>
+        <p>Explore how CSS handles overflowing content.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Overflow: Visible</h2>
+            <div class="box visible">
+                This is a long paragraph demonstrating visible overflow.
+                The content continues outside the fixed-height container.
+                More text is added to make the content overflow the box.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Overflow: Hidden</h2>
+            <div class="box hidden">
+                This is a long paragraph demonstrating hidden overflow.
+                The content continues beyond the fixed-height container.
+                The extra content is clipped and cannot be seen.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Overflow: Auto</h2>
+            <div class="box auto">
+                This is a long paragraph demonstrating automatic overflow.
+                When the content exceeds the container height, a scrollbar
+                appears as needed so users can read the remaining text.
+                More content helps demonstrate scrolling.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Overflow: Scroll</h2>
+            <div class="box scroll">
+                This is a long paragraph demonstrating scroll overflow.
+                A scrollbar is provided so users can access the extra text.
+                This content extends beyond the available height.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Fixed Layout Example</h2>
+            <div class="fixed-container">
+                This container has a fixed height and automatic overflow.
+                Adding more content will make the container scroll instead
+                of allowing the text to cover other sections of the page.
+            </div>
+        </section>
+    </main>
+</body>
+</html>
